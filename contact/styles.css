@@ -1,5 +1,5 @@
 /*Color palette: 9D5322 - 262425*/
-@font-face { font-family: TFBuild; src: url('tf2build.ttf'); } 
+@font-face { font-family: TFBuild; src: url('..\\tf2build.ttf'); } 
 html {
     height: 400%;
 }
@@ -7,7 +7,7 @@ body {
     margin-left: 0px;
     margin-top: 10px ;
 
-    background-image: url('bg.png');
+    background-image: url('..\\bg.png');
     background-size: cover;
     /*background-position-x: center;
     background-position-y: 45px;*/
