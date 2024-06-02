@@ -1,0 +1,79 @@
+/*Color palette: 9D5322 - 262425*/
+@font-face { font-family: TFBuild; src: url('tf2build.ttf'); } 
+html {
+    height: 400%;
+}
+body {
+    margin-left: 0px;
+    margin-top: 10px ;
+
+    background-image: url('bg.png');
+    background-size: cover;
+    /*background-position-x: center;
+    background-position-y: 45px;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: TFBuild;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-top: 70px;
+    margin-left: 32px;
+    color:white;
+}
+h1 {
+    font-size: 42pt;
+    text-align: center;
+    text-shadow: 5px 10px 1px rgba(0, 0, 0, 0.75);
+    -webkit-text-stroke: #000 0.5px;
+}
+h2 {
+    font-size: 32pt;
+    text-align: center;
+    text-shadow: 3px 6px 1px rgba(0, 0, 0, 0.75);
+    -webkit-text-stroke: #000 0.5px;
+}
+
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    list-style-type: none;
+    margin: 0;
+    padding-left: 24px;
+    overflow: hidden;
+    background-color: #262425;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 4px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+li img {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 32px;
+}
+li a:hover {
+    background-color: #9D5322;
+}
+.active {
+    background-color: #9D5322;
+}
+.background_container{
+    background-image: url("XXX");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+  }
