@@ -1,30 +1,39 @@
 /*Color palette: 9D5322 - 262425*/
 @font-face { font-family: TFBuild; src: url('tf2build.ttf'); } 
-
+html {
+    height: 400%;
+}
 body {
-    margin: 0;
+    margin-left: 0px;
     margin-top: 10px ;
 
-
     background-image: url('bg.png');
-    height: 100%;
+    background-size: cover;
+    /*background-position-x: center;
+    background-position-y: 45px;*/
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: TFBuild;
-}
-html {
-    height: 100%;
-    margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
     margin-top: 70px;
     margin-left: 32px;
     color:white;
 }
-
 h1 {
+    font-size: 42pt;
     text-align: center;
+    text-shadow: 5px 10px 1px rgba(0, 0, 0, 0.75);
+    -webkit-text-stroke: #000 0.5px;
 }
+h2 {
+    font-size: 32pt;
+    text-align: center;
+    text-shadow: 3px 6px 1px rgba(0, 0, 0, 0.75);
+    -webkit-text-stroke: #000 0.5px;
+}
+
 
 ul {
     position: fixed;
@@ -37,12 +46,9 @@ ul {
     overflow: hidden;
     background-color: #262425;
 }
-  
 li {
     float: left;
-    
 }
-  
 li a {
     display: block;
     color: white;
@@ -52,14 +58,22 @@ li a {
     text-decoration: none;
     transition: 0.25s;
 }
-
 li img {
     margin-top: 6px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 32px;
 }
- 
 li a:hover {
     background-color: #9D5322;
 }
+.active {
+    background-color: #9D5322;
+}
+.background_container{
+    background-image: url("XXX");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+  }
