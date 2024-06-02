@@ -1,19 +1,65 @@
+/*Color palette: 9D5322 - 262425*/
+@font-face { font-family: TFBuild; src: url('tf2build.ttf'); } 
+
 body {
     margin: 0;
+    margin-top: 10px ;
 
-    background-color:black;
-    background-image: url('bg.jpg');
+
+    background-image: url('bg.png');
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    font-family: TFBuild;
 }
 html {
     height: 100%;
     margin: 0;
 }
-h1, h2 {
-    text-align:center;
-    font-family:verdana;
-    color:rgb(255, 255, 255);
+h1, h2, h3, h4, h5, h6{
+    margin-top: 70px;
+    margin-left: 32px;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    list-style-type: none;
+    margin: 0;
+    padding-left: 24px;
+    overflow: hidden;
+    background-color: #262425;
+}
+  
+li {
+    float: left;
+    
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 4px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+li img {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 32px;
+}
+ 
+li a:hover {
+    background-color: #9D5322;
 }
